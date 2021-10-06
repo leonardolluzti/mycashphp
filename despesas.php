@@ -12,7 +12,7 @@
 </head>
 
 <body class="w3-display-topmiddle w3-mobile">
-<h1>MyCash</h1>
+<h1><img src="icones/favicon.png" width="50" height="50" alt="Logotipo">MyCash</h1>
 <hr>
 <nav>
 		<ul>
@@ -49,35 +49,22 @@ if (!$result) {
     echo "Ocorreu um erro!\n";
     exit;
 }
-echo "<div class='container_tabela'><table class='w3-table-all w3-bordered  rTable'>";
-echo "
-<thead>
-  <tr>
-      <th colspan='2'>Ações:</th>
-      <th>ID</th>
-      <th>Valor</th>
-      <th>Tipo</th>
-      <th>Data</th>
-      <th>Descricao</th>
-      <th>Fixo</th>
-  </tr>
-</thead>";
-      
+echo "<br />";
 while ($row = pg_fetch_array($result)) 
 {
-	echo "<tbody><tr class='w3-hover-blue'>
-  <td><a href='alterardesp.php?id=".$row['id']."'><img src='icones/Alterar.png' alt='Alterar' width='35' heigth='35' />Alterar</a></td>
-  <td><a href='apagardesp.php?id=".$row['id']."'><img src='icones/Excluir.png' alt='Excluir' width='35' heigth='35' />Excluir</a></td>
-  <td>".$row["id"]."</td>
-  <td>".$row["valor"]."</td>
-  <td>".$row["tipo"]."</td>
-  <td>".$row["data"]."</td>
-  <td>".$row["descricao"]."</td>
-  <td>".$row["fixo"]."</td>
-  </tr></tbody>"; 
+	echo "
+  <div class='w3-panel w3-border-left w3-border-blue'>
+  ID: ".$row["id"]."
+  | Valor: ".$row["valor"]."
+  | Tipo: ".$row["tipo"]."
+  | Data: ".$row["data"]."
+  | Descricao: ".$row["descricao"]."
+  | Fixo: ".$row["fixo"]."<br />  
+<a href='alterardesp.php?id=".$row['id']."'><img src='icones/Alterar.png' alt='Alterar' width='35' heigth='35' />Alterar</a>
+<a href='apagardesp.php?id=".$row['id']."'><img src='icones/Excluir.png' alt='Excluir' width='35' heigth='35' />Excluir</a>
+</div><br />"; 
 }
-echo "</table></div>";
-?>
+?>   
 </article>
 </section>
 <footer>© Copyright 2021 - LeoTech Informática</footer>

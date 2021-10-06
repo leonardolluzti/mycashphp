@@ -11,7 +11,7 @@
 </head>
 
 <body class="w3-display-topmiddle w3-mobile">
-<h1>MyCash</h1>
+<h1><img src="icones/favicon.png" width="50" height="50" alt="Logotipo">MyCash</h1>
 <hr>
 <nav>
 		<ul>
@@ -50,15 +50,15 @@ if (!$result) {
 }
 echo "<br />";
 while ($row = pg_fetch_array($result)) 
-{
+{ date('d-m-Y', $row["data"]);
 	echo "
   <div class='w3-panel w3-border-left w3-border-blue'>
   ID: ".$row["id"]."
-  Valor: ".$row["valor"]."
-  Tipo: ".$row["tipo"]."
-  Data: ".$row["data"]."
-  Descricao: ".$row["descricao"]."
-  Fixo: ".$row["fixo"]."<br />  
+  | Valor: ".$row["valor"]."
+  | Tipo: ".$row["tipo"]."
+  | Data: ".$row["data"]."
+  | Descricao: ".$row["descricao"]."
+  | Fixo: ".$row["fixo"]."<br />  
 <a href='alterarec.php?id=".$row['id']."'><img src='icones/Alterar.png' alt='Alterar' width='35' heigth='35' />Alterar</a>
 <a href='apagarec.php?id=".$row['id']."'><img src='icones/Excluir.png' alt='Excluir' width='35' heigth='35' />Excluir</a>
 </div><br />"; 

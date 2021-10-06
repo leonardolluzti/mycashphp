@@ -11,7 +11,7 @@
 </head>
 
 <body class="w3-display-topmiddle w3-mobile">
-<h1>MyCash</h1>
+<h1><img src="icones/favicon.png" width="50" height="50" alt="Logotipo">MyCash</h1>
 <hr>
 <nav>
 		<ul>

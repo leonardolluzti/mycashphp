@@ -17,7 +17,7 @@
 		<ul>
 			<li><a href="index.php">Inicio</a></li>
 			<li><a href="receitas.php">Receitas</a></li>
-      <li><a href="despesas.php">Despesas</a></li>
+      		<li><a href="despesas.php">Despesas</a></li>
 			<li><a href="sobre.php">Sobre Nós</a></li>
 		</ul>
 </nav>
