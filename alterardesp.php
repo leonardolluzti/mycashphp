@@ -54,7 +54,7 @@ Tipo: <select name='tipo'>
 <?php
 echo "	Data: <input type='date'  maxlength='20' size='11' name='data' value='".$row['data']."'  pattern='dd-mm-yyyy' /><br />";
 echo "	Descrição:  <input type='text' maxlength='10' size='11' name='descricao' value='".$row['descricao']."'/><br />";
-echo "	Fixo:  <input type='checkbox' maxlength='10' name='fixo' value='".$row['fixo']."'/><br />";
+echo "	Despesa Fixa:  <input type='checkbox' name='fixo' value='".$row['fixo']."'/><br />";
 ?>
 
 	<input type="submit" value="Gravar">

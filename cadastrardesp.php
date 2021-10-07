@@ -26,7 +26,7 @@
 <article>
 <h1>Cadastrar Despesas</h1>
 <img src="icones/Cadastrar.png" />
-	<form method="POST" action="<?php $PHP_SELF ?>" name="frmAddDesp">
+	<form method="POST" action="<?php $PHP_SELF ?>" name="frmAddDesp">	
 	Valor:  <input type="text" maxlength="50" size='50' name="valor" placeholder="R$ 00.00" /> <br /> 
 	Tipo: 	<select name="tipo">
 				<option value="Alimentos">Alimentos</option>
@@ -42,7 +42,7 @@
 			</select> <br /> 
 		Data:  <input type="date" maxlength="11" size='11' name="data"  /> <br /> 
 		Descricao: <input type="text" maxlength="50" size='50' name="descricao"  required="true" /> <br />
-		Fixo: <input type="checkbox" name="fixo" /> <br /> 
+		Despesa Fixa: <input type="checkbox" name="fixo" /> <br /> 
 		
 		<input type="submit" value="Gravar">
 		<input type="reset" value="Limpar">

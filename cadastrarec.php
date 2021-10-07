@@ -45,7 +45,8 @@
 			</select> <br /> 
 		Data:  <input type="date" maxlength="11" size='11' name="data"  placeholder="01-01-2021"/> <br /> 
 		Descricao: <input type="text" maxlength="50" size='50' name="descricao"  required="true" /> <br />
-		Fixo: <input type="checkbox" name="fixo" /> <br /> 
+		Receita Fixa: 	<input type="radio" name="fixo" value="true"/>Sim 
+						<input type="radio" name="fixo" value="false"/>Não<br /> 
 		
 		<input type="submit" value="Gravar">
 		<input type="reset" value="Limpar">
