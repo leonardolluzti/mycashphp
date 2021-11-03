@@ -10,7 +10,7 @@
 <title>MyCash</title>
 </head>
 
-<body class="w3-display-topmiddle w3-mobile">
+<body class="w3-display-topmiddle w3-responsive">
 <h1><img src="icones/favicon.png" width="50" height="50" alt="Logotipo">MyCash</h1>
 <hr>
 <nav>
@@ -41,7 +41,7 @@
 </div>
 <form method="POST" action="<?php $PHP_SELF ?>" name="frmPesqDesp">
 <label for name="descricao">Descrição:</label>
-  <input type="text" name="descricao" />  
+  <input type="text" name="descricao"/>  
 <label for name="data">Data:</label>
   <input type="date" name="data" />  
   

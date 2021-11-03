@@ -10,7 +10,7 @@
 <title>MyCash</title>
 </head>
 
-<body class="w3-display-topmiddle w3-mobile">
+<body class="w3-display-topmiddle w3-responsive">
 <h1><img src="icones/favicon.png" width="50" height="50" alt="Logotipo">MyCash</h1>
 <hr>
 <nav>
@@ -50,8 +50,7 @@ if (!$result) {
 }
 echo "<br />";
 while ($row = pg_fetch_array($result)) 
-{ date('d-m-Y', $row["data"]);
-	echo "
+{	echo "
   <div class='w3-panel w3-border-left w3-border-blue'>
   ID: ".$row["id"]."
   | Valor: ".$row["valor"]."

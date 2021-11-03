@@ -10,7 +10,7 @@
 <title>MyCash</title>
 </head>
 
-<body class="w3-display-topmiddle w3-mobile">
+<body class="w3-display-topmiddle w3-responsive">
 <h1><img src="icones/favicon.png" width="50" height="50" alt="Logotipo">MyCash</h1>
 <hr>
 <nav>
@@ -54,7 +54,8 @@ Tipo: <select name='tipo'>
 <?php
 echo "	Data: <input type='date'  maxlength='20' size='11' name='data' value='".$row['data']."' placeholder='01-01-2021'/><br />";
 echo "	Descrição:  <input type='text' maxlength='10' size='11' name='descricao' value='".$row['descricao']."'/><br />";
-echo "	Receita Fixa:  <input type='checkbox' name='fixo' value='".$row['fixo']."'/><br />";
+echo "	Receita Fixa:  Sim<input type='radio' name='fixo' value='true' />";
+echo "	Não<input type='radio' name='fixo' value='false'/><br />";
 ?>
 
 	<input type="submit" value="Gravar">

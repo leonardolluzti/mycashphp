@@ -10,7 +10,7 @@
 <title>MyCash</title>
 </head>
 
-<body class="w3-display-topmiddle w3-mobile">
+<body class="w3-display-topmiddle w3-responsive">
 <h1><img src="icones/favicon.png" width="50" height="50" alt="Logotipo">MyCash</h1>
 <hr>
 <nav>
@@ -42,7 +42,8 @@
 			</select> <br /> 
 		Data:  <input type="date" maxlength="11" size='11' name="data"  /> <br /> 
 		Descricao: <input type="text" maxlength="50" size='50' name="descricao"  required="true" /> <br />
-		Despesa Fixa: <input type="checkbox" name="fixo" /> <br /> 
+		Despesa Fixa: 	<input type="radio" name="fixo" value="true"/>Sim 
+						<input type="radio" name="fixo" value="false"/>Não<br /> 
 		
 		<input type="submit" value="Gravar">
 		<input type="reset" value="Limpar">

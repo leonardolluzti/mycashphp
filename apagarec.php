@@ -10,7 +10,7 @@
 <title>MyCash</title>
 </head>
 
-<body class="w3-display-topmiddle w3-mobile">
+<body class="w3-display-topmiddle w3-responsive">
 <h1><img src="icones/favicon.png" width="50" height="50" alt="Logotipo">MyCash</h1>
 <hr>
 	<nav>
@@ -29,7 +29,7 @@
 require 'conecta.php';
 
      $id = $_GET["id"];
-     $deleta = pg_query($conn,"DELETE FROM clientes WHERE id={$id}");
+     $deleta = pg_query($conn,"DELETE FROM receitas WHERE id={$id}");
 
 	if($deleta):
 		echo "<script type='text/javascript'>alert('Receita Excluida com sucesso!');window.location='receitas.php';</script>";
