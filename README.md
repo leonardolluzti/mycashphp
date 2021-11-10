@@ -9,5 +9,3 @@ Sistema de controle financeiro pessoal feito em PHP com banco de dados PostgreSQ
 - HTML5
 - CSS3
 - JavaScript
-
-
