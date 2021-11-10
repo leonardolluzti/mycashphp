@@ -4,7 +4,7 @@ $servidor = "localhost";
 $porta = "5432";
 $banco = "mycash";
 $usuario = "postgres";
-$senha = "pr3t3nd3r";
+$senha = "#P4ssw0rd";
 
 $conn = pg_pconnect("host=".$servidor." port=".$porta." dbname=".$banco." user=".$usuario." password=".$senha);
 if (!$conn) {
